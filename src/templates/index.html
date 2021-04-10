@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+{% with messages = get_flashed_messages(with_categories = true) %}
+{% if messages %}
+{% for category, msg in messages %}
+
+  <div class="alert alert-{{category}} alert-dismissible text-center container" style="margin-top: 10px;">
+    <strong>{{msg}}</strong>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  </div>
+  
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+
+<div class="container" id="introDiv">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="container">
+                <h4 class="text-center"><strong>Diabetes</strong></h4>
+                <img src="../static/imgs/diabetes.jpg" class="rounded img-fluid" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="container text-lg-center" id="introTextDiv">
+                <p>
+                    Diabetes is a prevalent hypertonic condition that affects millions of people all over the world. The
+                    prevalence of diabetes makes it a common comorbid condition in hospitalized patients. In recent
+                    years, government agencies and healthcare systems have increasingly focused on 30-day readmission
+                    rates to determine the complexity of the patient population and to improve the quality of
+                    treatment...
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-6" id="whyChecking">
+            <h4 class="text-center"><strong>Why Checking ?</strong></h4>
+            <p class="text-center">
+                From this <a href="https://clindiabetesendo.biomedcentral.com/articles/10.1186/s40842-016-0040-x/"
+                    target="_blank">study</a>, it has been found that the readmission rates for hospitalized patients
+                with
+                diabetes are 25% much higher than the rates for all hospitalized patients. Since readmission
+                requires the allocation of necessary resources like beds, rooms, specialists, and medical staff for
+                an acceptable quality of service, predicting the likelihood of hospital readmission for diabetes
+                patients has become a critical problem. Also, with an average doctor-to-patient ratio of 1:1000,
+                proper medical diagnosis and treatment get affected...
+            </p>
+        </div>
+
+        <div class="col col-md-5" id="checkNow">
+            <h4 class="text-center"><strong>Check a patient</strong></h4>
+            <p class="text-center" style="margin-top: 20px;">
+                To Check if a patient is going to be readmitted, simply just click here.
+                This will run an Machine Learning model that will predict the outcome...
+            </p>
+            <div class="container text-center" style="margin-top: 20px;">
+                <a class="btn btn-primary btn-lg text-center" href="/checkNow" role="button">Check now</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+{% endblock %}

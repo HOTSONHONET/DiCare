@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+
+<div class="container" id="formDiv">
+    <div class="row">
+        <div class="col-lg">
+            <div class="text-center">
+                <h4 class="text-center"><strong>Readmission Check</strong></h4>
+                <img src="../static/imgs/check.jpg" class="rounded img-fluid" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="container" id="introTextDiv">
+                <form action="/predict" method="POST" enctype="multipart/form-data">
+                    <!-- In-pateint -->
+                    <div class="form-group" style="margin-bottom: 5px;" >
+                        <label for="text">Number of In-patients</label>
+                        <input type="number" class="form-control" id="n_ips" aria-describedby="emailHelp"
+                            name="n_ips" placeholder="e.g: 1200" required>
+                    </div>
+                    
+                    <!-- discharge deposition-id_22 -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Discharge deposition id_22</label>
+                        <input type="number" class="form-control" id="dd_id22" aria-describedby="emailHelp"
+                            name="dd_id22" placeholder="e.g: 1 for yes, 0 for no" required>
+                    </div>
+                    
+                    <!-- discharge deposition-id_3 -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Discharge deposition id_3</label>
+                        <input type="number" class="form-control" id="dd_id3" aria-describedby="emailHelp"
+                            name="dd_id3" placeholder="e.g: 1 for yes, 0 for no" required>
+                    </div>
+
+                    <!-- # of emergency -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of emergency cases</label>
+                        <input type="number" class="form-control" id="n_emg_cs" aria-describedby="emailHelp"
+                            name="n_emg_cs" placeholder="e.g: 15" required>
+                    </div>
+
+                    <!-- # of diagnosis -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of diagnosis</label>
+                        <input type="number" class="form-control" id="n_ds" aria-describedby="emailHelp"
+                            name="n_ds" placeholder="e.g: 120" required>
+                    </div>
+
+                    <!-- # of medications -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of medications</label>
+                        <input type="number" class="form-control" id="n_mds" aria-describedby="emailHelp"
+                            name="n_mds" placeholder="e.g: 120" required>
+                    </div>
+
+                    <!-- Time in hospital -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of hours spent in hospital</label>
+                        <input type="number" class="form-control" id="n_hrhos" aria-describedby="emailHelp"
+                            name="n_hrhos" placeholder="e.g: 72, Only put number" required>
+                    </div>
+
+                    <!-- # of lab procedures -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of lab procedures</label>
+                        <input type="number" class="form-control" id="n_lps" aria-describedby="emailHelp"
+                            name="n_lps" placeholder="e.g: 72, Only put number" required>
+                    </div>
+
+                    <!-- Insulin amount -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Insulin quatity</label>
+                        <input type="number" class="form-control" id="insln_cnt" aria-describedby="emailHelp"
+                            name="insln_cnt" placeholder="e.g: 72, Only put number" required>
+                    </div>
+
+                    <!-- Age group -->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Age</label>
+                        <input type="number" class="form-control" id="age" aria-describedby="emailHelp"
+                            name="age" placeholder="e.g: 18" required>
+                    </div>   
+                    
+                    <!-- Out-patient-->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of Out patient</label>
+                        <input type="number" class="form-control" id="n_ops" aria-describedby="emailHelp"
+                            name="n_ops" placeholder="e.g: 180" required>
+                    </div>
+                    
+                    <!-- # of procedures-->
+                    <div class="form-group" style="margin-bottom: 5px;">
+                        <label for="text">Number of procedures</label>
+                        <input type="number" class="form-control" id="n_ps" aria-describedby="emailHelp"
+                            name="n_ps" placeholder="e.g: 80" required>
+                    </div>                   
+                    
+
+                    <div class="text-center" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

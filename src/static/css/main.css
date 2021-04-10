@@ -1,0 +1,53 @@
+/* body {
+    padding: auto;
+} */
+
+#introDiv {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #e6fff2;
+}
+
+#formDiv {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #e6fff2;
+    margin-bottom: 30px;
+}
+
+#introTextDiv {
+    float: left;
+    padding: 50px;
+}
+
+#whyChecking {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    background-color: #ffb3ff;
+}
+
+#checkNow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    background-color: #99ff99;
+}
+
+a{
+    text-decoration: none;
+}
