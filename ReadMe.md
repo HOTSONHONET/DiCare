@@ -104,6 +104,11 @@ pip install -r requirements.txt
 py wsgi.py
 ~~~
 
+# Installing in EC2 Instance
+* Create an Ubuntu EC2 instance... 
+* Clone the repository there... 
+* Run run.sh, it will install all the required files and dependency automatically... 
+* Just sit back and use the application 😁
 
 # Sample Images 😉
 <table>
