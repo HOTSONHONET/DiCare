@@ -99,7 +99,7 @@ pip install -r requirements.txt
 
 # How to run the application ?
 * Open command prompt inside the clone folder using `Shift + rightclick`
-* Type the below command <em>(python3 instead of py, if you are on Ubuntu)</em>
+* Type the below command <em>(use python3 instead of py, if you are on Ubuntu)</em>
 ~~~
 py wsgi.py
 ~~~
