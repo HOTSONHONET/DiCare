@@ -99,7 +99,6 @@ pip install -r requirements.txt
 
 # How to run the application ?
 * Open command prompt inside the clone folder using `Shift + rightclick`
-* Type the below command, this will ask you for the video path and the cross line height in terms of precentage
 ~~~
 py wsgi.py
 ~~~
