@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 # Folder Structure
 * After downloading the weight file, make sure you have the same folder structure
-* It may happen that you may not have the *__pyache__* folder, it's completely fine 👌
+* It may happen that you may see the *__pyache__* folder in your end but not listed here, it's completely fine 👌
 ~~~
 
 │   config.py
@@ -39,61 +39,43 @@ pip install -r requirements.txt
 │   sleep.sh
 │   wsgi.py
 │
-├───.vscode
-│       settings.json
-│
 ├───src
-│   │   database.py
-│   │   routes.py
-│   │   __init__.py
-│   │
-│   ├───assets
-│   │       icon.ico
-│   │
-│   ├───Dash
-│   │   │   apis.py
-│   │   │   components.py
-│   │   │   dashapp.py
-│   │   │   __init__.py
-│   │   │
-│   │   └───__pycache__
-│   │           apis.cpython-37.pyc
-│   │           components.cpython-37.pyc
-│   │           dashapp.cpython-37.pyc
-│   │           __init__.cpython-37.pyc
-│   │
-│   ├───static
-│   │   ├───css
-│   │   │       main.css
-│   │   │
-│   │   └───imgs
-│   │           check.jpg
-│   │           diabetes.jpg
-│   │           enrollPatient.jpg
-│   │           icon.ico
-│   │
-│   ├───templates
-│   │       checkNow.html
-│   │       enroll.html
-│   │       index.html
-│   │       layout.html
-│   │
-│   ├───Uitls
-│   │   │   model.py
-│   │   │   reAdmissionDiabeticsModel.pkl
-│   │   │   StndSclr.sav
-│   │   │
-│   │   └───__pycache__
-│   │           config.cpython-37.pyc
-│   │           model.cpython-37.pyc
-│   │
-│   └───__pycache__
-│           database.cpython-37.pyc
-│           routes.cpython-37.pyc
-│           __init__.cpython-37.pyc
-│
-└───__pycache__
-        config.cpython-37.pyc           __init__.cpython-37.pyc
+    │   database.py
+    │   routes.py
+    │   __init__.py
+    │
+    ├───assets
+    │       icon.ico
+    │
+    ├───Dash
+    │      apis.py
+    │      components.py
+    │      dashapp.py
+    │      __init__.py
+    │   
+    │   
+    │
+    ├───static
+    │   ├───css
+    │   │       main.css
+    │   │
+    │   └───imgs
+    │           check.jpg
+    │           diabetes.jpg
+    │           enrollPatient.jpg
+    │           icon.ico
+    │
+    ├───templates
+    │       checkNow.html
+    │       enroll.html
+    │       index.html
+    │       layout.html
+    │
+    ├───Uitls
+         model.py
+         reAdmissionDiabeticsModel.pkl
+         StndSclr.sav
+
 ~~~
 
 
