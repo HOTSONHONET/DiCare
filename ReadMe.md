@@ -92,6 +92,9 @@ py wsgi.py
 * Run `run.sh`, it will install all the required files and dependency automatically... 
 * Just sit back and use the application 😁
 
+# WorkFlow 
+![Template builder (1)](https://user-images.githubusercontent.com/56304060/134165318-055a288b-f524-436d-938b-d452919f005b.png)
+
 # Sample Images 😉
 <table>
   <tr>
